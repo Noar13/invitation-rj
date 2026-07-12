@@ -1,10 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
-
-export const supabase = createClient(supabaseUrl, supabaseKey);
-
 export interface Guest {
   id: string;
   name: string;
@@ -24,3 +19,19 @@ export interface Wish {
   message: string;
   created_at: string;
 }
+
+function getSupabase() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  if (!url || !key) throw new Error("Supabase env variables missing");
+  return createClient(url, key);
+}
+
+let _supabase: ReturnType<typeof createClient> | null = null;
+
+export const supabase = new Proxy({} as ReturnType<typeof createClient>, {
+  get(_target, prop) {
+    if (!_supabase) _supabase = getSupabase();
+    return (_supabase as Record<string | symbol, unknown>)[prop];
+  },
+});
