@@ -1,5 +1,8 @@
 "use client";
 
+export const dynamic = "force-dynamic";
+
+
 // app/admin/page.tsx
 // Dashboard admin — data real dari Supabase + realtime + QR Scanner check-in
 
