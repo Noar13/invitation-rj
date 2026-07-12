@@ -1,4 +1,4 @@
-import { createClient } from "@supabase/supabase-js";
+import { createClient, SupabaseClient } from "@supabase/supabase-js";
 
 export interface Guest {
   id: string;
@@ -20,18 +20,19 @@ export interface Wish {
   created_at: string;
 }
 
-function getSupabase() {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-  if (!url || !key) throw new Error("Supabase env variables missing");
-  return createClient(url, key);
+let _client: SupabaseClient | null = null;
+
+export function getSupabaseClient(): SupabaseClient {
+  if (_client) return _client;
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
+  _client = createClient(url, key);
+  return _client;
 }
 
-let _supabase: ReturnType<typeof createClient> | null = null;
-
-export const supabase = new Proxy({} as ReturnType<typeof createClient>, {
-  get(_target, prop) {
-    if (!_supabase) _supabase = getSupabase();
-    return (_supabase as Record<string | symbol, unknown>)[prop];
-  },
-});
+// Untuk backward compatibility — pakai getSupabaseClient() di semua file
+export const supabase = {
+  from: (...args: Parameters<SupabaseClient["from"]>) => getSupabaseClient().from(...args),
+  channel: (...args: Parameters<SupabaseClient["channel"]>) => getSupabaseClient().channel(...args),
+  removeChannel: (...args: Parameters<SupabaseClient["removeChannel"]>) => getSupabaseClient().removeChannel(...args),
+};
