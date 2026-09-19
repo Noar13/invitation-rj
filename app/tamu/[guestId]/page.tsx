@@ -439,8 +439,15 @@ function StorySection() {
           transition={{ duration: 1 }} viewport={{ once: true }}>
           <h2 className="text-5xl md:text-6xl text-white font-light mb-8 leading-tight"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}>Two Souls,<br />Become One</h2>
-          <p className="text-white/50 leading-relaxed text-sm mb-4">Every step brings us closer; every prayer makes us stronger. Now, we are ready to walk together as one in His love and grace.</p>
-          <p className="text-white/40 leading-relaxed text-sm">The bond that unites us now resides in all our hearts. That bond will never be broken. Let us grow with all our might until we bloom to perfection. There is no place to return to, let us head toward the destination we seek. Live in the present moment.</p>
+          <p className="text-white/50 leading-relaxed text-sm mb-4"
+          >Every step brings us closer, every prayer makes us stronger. Now, we are ready to walk together as one in His love and grace.
+          </p>          
+          <p className="text-white/40 leading-relaxed text-sm"
+          >The bond that brought us together now lives forever in our hearts.
+          Let us grow, bloom, and move forward together, cherishing this moment and the life we choose. 
+          There is no place to return to, let us head toward the destination we seek. 
+          Live in the present moment.
+          </p>
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 60 }} whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }} viewport={{ once: true }}>
@@ -516,7 +523,7 @@ function GallerySection() {
           <h2 className="text-5xl md:text-6xl text-white font-light" style={{ fontFamily: "'Cormorant Garamond', serif" }}>A Glimpse<br />of Us</h2>
         </motion.div>
         <div className="grid md:grid-cols-3 gap-4">
-          {["/photos/263128.jpg", "/photos/263130.jpg", "/photos/263132.jpg"].map((src, i) => (
+          {["/photos/263133.jpg", "/photos/263130.jpg", "/photos/263132.jpg", "/photos/263131.jpg"].map((src, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: i * 0.1 }} viewport={{ once: true }}
               className="overflow-hidden rounded-3xl" style={{ height: i === 1 ? "560px" : "400px" }}>
