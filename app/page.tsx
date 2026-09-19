@@ -517,7 +517,7 @@ function GallerySection() {
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-4">
-          {["/photos/263133.jpg", "/photos/263130.jpg", "/photos/263132.jpg", "/photos/263131.jpg"].map((src, i) => (
+          {["/photos/263133.jpg", "/photos/263130.jpg", "/photos/263132.jpg"].map((src, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 40 }}

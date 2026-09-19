@@ -523,7 +523,7 @@ function GallerySection() {
           <h2 className="text-5xl md:text-6xl text-white font-light" style={{ fontFamily: "'Cormorant Garamond', serif" }}>A Glimpse<br />of Us</h2>
         </motion.div>
         <div className="grid md:grid-cols-3 gap-4">
-          {["/photos/263133.jpg", "/photos/263130.jpg", "/photos/263132.jpg", "/photos/263131.jpg"].map((src, i) => (
+          {["/photos/263133.jpg", "/photos/263130.jpg", "/photos/263132.jpg"].map((src, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: i * 0.1 }} viewport={{ once: true }}
               className="overflow-hidden rounded-3xl" style={{ height: i === 1 ? "560px" : "400px" }}>
