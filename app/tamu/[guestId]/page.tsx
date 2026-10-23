@@ -1500,7 +1500,7 @@ function StorySection() {
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 60 }} whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }} viewport={{ once: true }}>
-          <img src="/photos/263128.jpg" alt="Our Story" className="w-full h-[500px] object-cover rounded-3xl" loading="lazy" />
+          <img src="/photos/263134.jpg" alt="Our Story" className="w-full h-[500px] object-cover rounded-3xl" loading="lazy" />
         </motion.div>
       </div>
     </section>
