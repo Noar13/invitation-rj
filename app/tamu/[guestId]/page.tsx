@@ -1094,7 +1094,6 @@ const GALLERY_ITEMS: CircularCarouselItem[] = [
   { src: "/photos/263138.jpg", alt: "Ririn & Jeki 7" },
   { src: "/photos/263132.jpg", alt: "Ririn & Jeki 8" },
   { src: "/photos/263139.jpg", alt: "Ririn & Jeki 9" },
-  { src: "/photos/263141.jpg", alt: "Ririn & Jeki 10" },
   // tambah foto lain di sini, idealnya total 6-8
 ];
 
