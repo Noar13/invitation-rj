@@ -1090,6 +1090,12 @@ const GALLERY_ITEMS: CircularCarouselItem[] = [
   { src: "/photos/263132.jpg", alt: "Ririn & Jeki 3" },
   { src: "/photos/263129.jpg", alt: "Ririn & Jeki 4" },
   { src: "/photos/263128.jpg", alt: "Ririn & Jeki 5" },
+  { src: "/photos/263134.jpg", alt: "Ririn & Jeki 6" },
+  { src: "/photos/263135.jpg", alt: "Ririn & Jeki 7" },
+  { src: "/photos/263136.jpg", alt: "Ririn & Jeki 8" },
+  { src: "/photos/263137.jpg", alt: "Ririn & Jeki 9" },
+  { src: "/photos/263138.jpg", alt: "Ririn & Jeki 10" },
+  { src: "/photos/263139.jpg", alt: "Ririn & Jeki 11" },
   // tambah foto lain di sini, idealnya total 6-8
 ];
 
