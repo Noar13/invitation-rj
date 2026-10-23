@@ -1094,7 +1094,7 @@ const GALLERY_ITEMS: CircularCarouselItem[] = [
   { src: "/photos/263138.jpg", alt: "Ririn & Jeki 7" },
   { src: "/photos/263132.jpg", alt: "Ririn & Jeki 8" },
   { src: "/photos/263139.jpg", alt: "Ririn & Jeki 9" },
-  { src: "/photos/263131.jpg", alt: "Ririn & Jeki 10" },
+  { src: "/photos/263134.jpg", alt: "Ririn & Jeki 10" },
   // tambah foto lain di sini, idealnya total 6-8
 ];
 
@@ -1499,7 +1499,7 @@ function StorySection() {
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 60 }} whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }} viewport={{ once: true }}>
-          <img src="/photos/263134.jpg" alt="Our Story" className="w-full h-[500px] object-cover rounded-3xl" loading="lazy" />
+          <img src="/photos/263135.jpg" alt="Our Story" className="w-full h-[500px] object-cover rounded-3xl" loading="lazy" />
         </motion.div>
       </div>
     </section>
