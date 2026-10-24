@@ -516,7 +516,7 @@ const markBlasted = (guestId: string) => {
               <select value={filterBride} onChange={(e) => setFilterBride(e.target.value)}
                 className="rounded-xl px-4 py-2.5 text-sm text-white outline-none"
                 style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)" }}>
-                {["All", "Ririn", "Jeki, Ririn 2"].map((b) => <option key={b} value={b} className="bg-[#080C14]">{b}</option>)}
+                {["All", "Ririn", "Jeki", "Ririn 2"].map((b) => <option key={b} value={b} className="bg-[#080C14]">{b}</option>)}
               </select>
             </div>
 
