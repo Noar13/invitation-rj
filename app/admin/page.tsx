@@ -600,7 +600,7 @@ const markBlasted = (guestId: string) => {
     {/* Filter & Summary Bar */}
     <div className="flex flex-wrap items-center gap-3 mb-6">
       <div className="flex gap-2">
-        {["All", "Jeki", "Ririn"].map((f) => (
+        {["All", "Jeki", "Ririn","Ririn 2"].map((f) => (
           <button
             key={f}
             onClick={() => setBlastFilter(f)}
