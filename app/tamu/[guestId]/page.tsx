@@ -1671,8 +1671,8 @@ function WishesSection({ guestName }: { guestName: string }) {
       <div className="max-w-4xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-center mb-16">
-          <p className="uppercase tracking-[8px] text-[#65B7F6] text-xs mb-6">Wishes</p>
           <h2 className="text-5xl md:text-6xl text-white font-light" style={{ fontFamily: "'Cormorant Garamond', serif" }}>Wishes</h2>
+          <p className="uppercase tracking-[8px] text-[#f9fafa] text-xs mb-6">Share your best wishes and prayers with us</p>
         </motion.div>
         <div className="grid md:grid-cols-2 gap-8">
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }}
