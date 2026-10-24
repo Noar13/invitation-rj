@@ -1052,7 +1052,7 @@ interface GiftData {
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
-const BRIDE_WA = "6289620487838";
+const BRIDE_WA = "6285111203610";
 
 function buildGiftWALink(form: GiftData): string {
   let detail = "";
@@ -1487,13 +1487,13 @@ function StorySection() {
           <h2 className="text-5xl md:text-6xl text-white font-light mb-8 leading-tight"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}>Two Souls,<br />Become One</h2>
           <p className="text-white/50 leading-relaxed text-sm mb-4">
-            Every step brings us closer, every prayer makes us stronger. Now, we are ready to walk together as one in His love and grace.
+            Every step has brought us closer, and every prayer has led us here. With the grace and blessings of Allah SWT, we’re ready to begin our life together.
           </p>
           <p className="text-white/40 leading-relaxed text-sm">
-            The bond that brought us together now lives forever in our hearts.
-            Let us grow, bloom, and move forward together, cherishing this moment and the life we choose.
-            There is no place to return to, let us head toward the destination we seek.
-            Live in the present moment.
+            As we start this new chapter, we look forward to growing together, supporting each other, and cherishing the little moments that make life special.
+          </p>
+          <p className="text-white/40 leading-relaxed text-sm">
+            This is just the beginning of our story, and we can’t wait to build a life filled with love, faith, and beautiful memories.
           </p>
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 60 }} whileInView={{ opacity: 1, x: 0 }}
