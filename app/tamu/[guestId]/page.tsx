@@ -1672,7 +1672,7 @@ function WishesSection({ guestName }: { guestName: string }) {
         <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-center mb-16">
           <p className="uppercase tracking-[8px] text-[#65B7F6] text-xs mb-6">Wishes</p>
-          <h2 className="text-5xl md:text-6xl text-white font-light" style={{ fontFamily: "'Cormorant Garamond', serif" }}>RSVP & Wishes</h2>
+          <h2 className="text-5xl md:text-6xl text-white font-light" style={{ fontFamily: "'Cormorant Garamond', serif" }}>Wishes</h2>
         </motion.div>
         <div className="grid md:grid-cols-2 gap-8">
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }}
@@ -1702,7 +1702,7 @@ function WishesSection({ guestName }: { guestName: string }) {
               disabled={submitting || !name.trim() || !msg.trim()}
               className="w-full py-4 rounded-full text-black font-semibold text-sm tracking-widest uppercase disabled:opacity-50"
               style={{ background: "linear-gradient(135deg, #65B7F6, #a8d8f8)" }}>
-              {submitting ? "Mengirim..." : "Send RSVP & Wishes"}
+              {submitting ? "Mengirim..." : "Send Wishes"}
             </motion.button>
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }}
