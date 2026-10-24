@@ -1489,7 +1489,7 @@ function StorySection() {
           <p className="text-white/50 leading-relaxed text-sm mb-4">
             Every step has brought us closer, and every prayer has led us here. With the grace and blessings of Allah SWT, we’re ready to begin our life together.
           </p>
-          <p className="text-white/40 leading-relaxed text-sm">
+          <p className="text-white/40 leading-relaxed text-sm mb-4">
             As we start this new chapter, we look forward to growing together, supporting each other, and cherishing the little moments that make life special.
           </p>
           <p className="text-white/40 leading-relaxed text-sm">
