@@ -1428,8 +1428,8 @@ function Navbar({ musicOn, onToggleMusic, active }: { musicOn: boolean; onToggle
 
 const TIMELINE = [
   { id: "01", label: "Bride & Groom Arrival", time: "09:30 WIB" },
-  { id: "02", label: "Opening Ceremony", time: "10:00 WIB" },
-  { id: "03", label: "Special Lunch With Guests", time: "11:00 WIB" },
+  { id: "02", label: "Wedding Ceremony", time: "10:00 WIB" },
+  { id: "03", label: "Wedding Reception", time: "11:00 WIB" },
   { id: "04", label: "Closing Moment", time: "13:00 WIB" },
 ];
 
