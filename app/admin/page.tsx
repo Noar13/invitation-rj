@@ -17,8 +17,8 @@ function buildWABlastLink(guest: Guest, baseUrl: string): string {
   const inviteUrl = `${baseUrl}/tamu/${guest.id}`;
   const msg = encodeURIComponent(
     `Hi Dear, ${guest.name}\n\n` +
-    `We warmly invite you to celebrate our special moment:\n\n` +
-    `*RJ Moment*\n` +
+    `We warmly invite you to celebrate our wedding:\n\n` +
+    `*Save the Date*\n` +
     `- Date   : Sunday, 15 November 2026\n` +
     `- Time   : 10:00 - 13:00 WIB Onward\n` +
     `- Venue  : Mang Kabayan Signature, Jakarta\n` +
